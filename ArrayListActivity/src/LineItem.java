@@ -63,15 +63,13 @@ public class LineItem {
 		return currency.format(this.subtotal);
 	}
 
-	// Place
-	// changed-------------------------------------------------------------------
+	
 	public String getFormattedNumber() {
 		NumberFormat quantity = NumberFormat.getNumberInstance();
 		return quantity.format(this.getQuantity());
 	}
 
-	// Place
-	// changed-------------------------------------------------------------------
+	
 	public static String getFormattedPrice(double price) {
 		NumberFormat currency = NumberFormat.getCurrencyInstance();
 		return currency.format(price);
